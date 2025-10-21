@@ -9,7 +9,6 @@ spec:
     spec:
       chart: kube-prometheus-stack
       version: "66.2.2"
-      version: "62.x"
 
       sourceRef:
         kind: HelmRepository
