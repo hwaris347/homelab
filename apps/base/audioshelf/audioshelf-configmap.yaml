@@ -5,3 +5,4 @@ metadata:
   namespace: audioshelf
 data:
   TZ: "America/Toronto"
+  PORT: "3005"
