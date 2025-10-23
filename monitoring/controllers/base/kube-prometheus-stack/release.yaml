@@ -29,4 +29,9 @@ spec:
   values:
     grafana:
       adminPassword: hwaris
+      ingress:
+        enabled: true
+        ingressClassName: traefik
 
+        hosts:
+          - grs.hasnainshomelab.com
