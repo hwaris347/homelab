@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: audioshelf
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: audioshelf
+  template:
+    metadata:
+      labels:
+        app: audioshelf
+    spec:
+
+      containers:
+        - name: audioshelf
+          image: ghcr.io/advplyr/audiobookshelf:latest
+          ports:
+            - containerPort: 3005
+          envFrom:
+            - configMapRef:
+                name: audioshelf-configmap

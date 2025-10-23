@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: audioshelf-configmap
+  namespace: audioshelf
+data:
+  TZ: "America/Toronto"
