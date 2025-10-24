@@ -29,7 +29,6 @@ spec:
           - mountPath: /audiobooks
             name: audioshelf-audiobooks
 
-      restartPolicy: Always
       volumes:
         - name: audioshelf-config
           persistentVolumeClaim:
