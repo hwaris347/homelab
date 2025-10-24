@@ -21,14 +21,16 @@ spec:
           envFrom:
             - configMapRef:
                 name: audioshelf-configmap
-          volumeMounts:
-          - mountPath: /config
-            name: audioshelf-config
-          - mountPath: /metadata
-            name: audioshelf-metadata
-          - mountPath: /audiobooks
-            name: audioshelf-audiobooks
 
+          volumeMounts:
+            - mountPath: /config
+              name: audioshelf-config
+            - mountPath: /metadata
+              name: audioshelf-metadata
+            - mountPath: /audiobooks
+              name: audioshelf-audiobooks
+
+      restartPolicy: Always
       volumes:
         - name: audioshelf-config
           persistentVolumeClaim:
