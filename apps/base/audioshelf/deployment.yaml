@@ -35,9 +35,11 @@ spec:
         - name: audioshelf-config
           persistentVolumeClaim:
             claimName: audioshelf-config-pvc
+
         - name: audioshelf-metadata
           persistentVolumeClaim:
             claimName: audioshelf-metadata-pvc
+
         - name: audioshelf-audiobooks
           persistentVolumeClaim:
             claimName: audioshelf-audiobooks-pvc
