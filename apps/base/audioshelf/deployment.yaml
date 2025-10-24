@@ -29,13 +29,14 @@ spec:
               name: audioshelf-metadata
             - mountPath: /audiobooks
               name: audioshelf-audiobooks
-
       restartPolicy: Always
       volumes:
-        - name: audioshelf-config
+        - name: audioshelf-config-pvc
           persistentVolumeClaim:
             claimName: audioshelf-config-pvc
-
         - name: audioshelf-metadata
-          persistentVolumeClaim:
-            claimName: audioshelf-metadata-pvc
+          persistentVolumeClaim:
+            claimName: audioshelf-metadata-pvc
+        - name: audioshelf-audiobooks
+          persistentVolumeClaim:
+            claimName: audioshelf-audiobooks-pvc
