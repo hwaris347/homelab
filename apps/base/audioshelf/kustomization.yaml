@@ -6,3 +6,4 @@ resources:
   - deployment.yaml
   - audioshelf-configmap.yaml
   - service.yaml
+  - storage.yaml
